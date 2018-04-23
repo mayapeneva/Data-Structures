@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 [TestFixture]
-class InsertFourth
+public class InsertFourth
 {
     [Test]
     [Timeout(500)]

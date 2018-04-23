@@ -2,7 +2,7 @@
 
 public class HeapExample
 {
-    private static void Main()
+    public static void Main()
     {
         Console.WriteLine("Created an empty heap.");
         var heap = new BinaryHeap<int>();

@@ -18,7 +18,7 @@ public class PlayWithTrees
         Console.WriteLine("Tree (indented):");
         tree.Print();
 
-        Console.Write("Tree nodes:");
+        Console.Write("Tree nodes: ");
         tree.Each(c => Console.Write(" " + c));
         Console.WriteLine();
 

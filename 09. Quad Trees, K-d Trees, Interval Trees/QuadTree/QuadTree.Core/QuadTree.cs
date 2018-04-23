@@ -104,7 +104,7 @@ public class QuadTree<T> where T : IBoundable
 
         foreach (var child in node.Children)
         {
-            Split(child, depth + 1);
+            this.Split(child, depth + 1);
         }
     }
 

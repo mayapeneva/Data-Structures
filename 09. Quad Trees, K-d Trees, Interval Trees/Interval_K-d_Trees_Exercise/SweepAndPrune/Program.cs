@@ -14,7 +14,7 @@ public class Program
         string input;
         while ((input = Console.ReadLine()) != "end")
         {
-            var command = input.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            var command = input.Split();
             if (command[0].Equals("move"))
             {
                 var name = command[1];

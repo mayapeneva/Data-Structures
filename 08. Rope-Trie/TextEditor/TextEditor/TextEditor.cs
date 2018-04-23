@@ -69,9 +69,6 @@ public class TextEditor : ITextEditor
         }
 
         this.users.Insert(username, newStr);
-
-        //this.users.GetValue(username).RemoveRange(0, //startIndex);
-        //this.users.GetValue(username).RemoveRange(startIndex + length, this.Length(username));
     }
 
     public void Delete(string username, int startIndex, int length)

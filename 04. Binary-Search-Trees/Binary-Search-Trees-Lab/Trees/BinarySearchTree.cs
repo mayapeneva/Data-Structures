@@ -128,7 +128,7 @@ public class BinarySearchTree<T> where T : IComparable<T>
         return result;
     }
 
-    private void Range(Node node, List<T> result, T start, T end)
+    public void Range(Node node, List<T> result, T start, T end)
     {
         if (node == null)
         {

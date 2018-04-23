@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Tree<T>
+internal class Tree<T>
 {
     public Tree(T value, params Tree<T>[] children)
     {

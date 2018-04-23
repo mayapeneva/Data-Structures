@@ -14,7 +14,7 @@ public class Trie<Value>
 
     public Value GetValue(string key)
     {
-        var x = GetNode(root, key, 0);
+        var x = this.GetNode(root, key, 0);
         if (x == null || !x.isTerminal)
         {
             throw new InvalidOperationException();
@@ -25,13 +25,13 @@ public class Trie<Value>
 
     public bool Contains(string key)
     {
-        var node = GetNode(this.root, key, 0);
+        var node = this.GetNode(this.root, key, 0);
         return node != null && node.isTerminal;
     }
 
     public void Insert(string key, Value val)
     {
-        root = Insert(root, key, val, 0);
+        this.root = this.Insert(root, key, val, 0);
     }
 
     public IEnumerable<string> GetByPrefix(string prefix)
@@ -64,7 +64,7 @@ public class Trie<Value>
             node = x.next[c];
         }
 
-        return GetNode(node, key, d + 1);
+        return this.GetNode(node, key, d + 1);
     }
 
     private Node Insert(Node node, string key, Value val, int d)
@@ -106,7 +106,7 @@ public class Trie<Value>
 
         foreach (var c in x.next.Keys)
         {
-            Collect(x.next[c], prefix + c, results);
+            this.Collect(x.next[c], prefix + c, results);
         }
     }
 }

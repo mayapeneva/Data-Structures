@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 [TestFixture]
-class InsertThird
+public class InsertThird
 {
     [Test]
     public void Insert_MultipleElements_ShouldBeBalanced()

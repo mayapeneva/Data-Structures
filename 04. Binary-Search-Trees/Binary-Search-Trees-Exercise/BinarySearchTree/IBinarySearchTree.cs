@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-internal interface IBinarySearchTree<T> where T : IComparable
+public interface IBinarySearchTree<T> where T : IComparable
 {
     //Basic Tree Operations
     void Insert(T element);

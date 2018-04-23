@@ -1,6 +1,6 @@
 ﻿public class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         KdTree tree = new KdTree();
         tree.Insert(new Point2D(5, 5));

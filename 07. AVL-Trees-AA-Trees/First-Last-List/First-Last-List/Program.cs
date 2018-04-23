@@ -2,7 +2,7 @@
 
 public class Program
 {
-    private static void Main(string[] args)
+    public static void Main(string[] args)
     {
         FirstLastList<int> list = new FirstLastList<int>();
         list.Add(1);

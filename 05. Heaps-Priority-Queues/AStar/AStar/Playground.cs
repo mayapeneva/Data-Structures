@@ -12,7 +12,7 @@ public class Playground
                     { '-', '-', '-', '-', '-', '-', '-', '-' }
          };
 
-    private static void Main()
+    public static void Main()
     {
         // map = ReadMap();
 

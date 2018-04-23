@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 
 [TestFixture]
-class InsertFirst
+public class InsertFirst
 {
     [Test]
     public void Insert_SingleElement_ShouldIncreaseCount()
